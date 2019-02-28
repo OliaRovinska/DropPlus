@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
@@ -149,15 +150,20 @@ namespace Demo.Identity.Controllers
         [HttpPost]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         [ActionName("Logout")]
-        public async Task<ResponseMessage> Logout([FromBody]LogoutViewModel model)
+        public async Task<ResponseMessage> Logout()
         {
             if (!ModelState.IsValid)
             {
                 return new ResponseMessage(false, "Model state is invalid", StatusCodeEnum.BadRequest);
             }
 
-            var user = await _userManager.FindByIdAsync(model.Id);
+            var identity = HttpContext.User.Identity as ClaimsIdentity;
+            if (identity == null)
+            {
+                return new ResponseMessage(false, "Token is invalid. Can't take user's claims", StatusCodeEnum.BadRequest);
+            }
 
+            var user = await _userManager.FindByIdAsync(identity.Claims.FirstOrDefault(claim => claim.Type == "id")?.Value);
             // check if user exists
             if (user == null)
             {
