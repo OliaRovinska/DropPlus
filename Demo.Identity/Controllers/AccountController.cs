@@ -174,14 +174,6 @@ namespace Demo.Identity.Controllers
             return new ResponseMessage(true, "User was logged out", StatusCodeEnum.Ok);
         }
 
-        [HttpPost]
-        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [ActionName("Test")]
-        public ResponseMessage Test()
-        {
-            return new ResponseMessage(true, "authorized", StatusCodeEnum.Ok);
-        }
-
         private async Task<TokenViewModel> GetAuthToken(AppUser user)
         {
             var identity = _tokenFactory.GenerateClaimsIdentity(user.UserName, user.Id);
