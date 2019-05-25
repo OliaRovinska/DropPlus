@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DropPlus.Identity", "DropPlus.Identity\DropPlus.Identity.csproj", "{74FEB820-AA33-496C-950C-264E2B2EC5AB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DropPlus.API", "DropPlus.API\DropPlus.API.csproj", "{DAC3DE18-F9F6-4304-90A1-5BEA2A15FC4B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DropPlus.DAL", "DropPlus.DAL\DropPlus.DAL.csproj", "{6A6FFADB-C607-4C77-902D-F4BBBB1477BD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DropPlus.BLL", "DropPlus.BLL\DropPlus.BLL.csproj", "{34349E94-ED11-495E-AAA6-E6D2B35729A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropPlus.Web", "DropPlus.Web\DropPlus.Web.csproj", "{D3D2C72B-A395-400D-9D26-FF371E807BC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropPlus.Common", "DropPlus.Common\DropPlus.Common.csproj", "{A2E2F1E2-5DEF-4617-96D8-43754E3633C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74FEB820-AA33-496C-950C-264E2B2EC5AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74FEB820-AA33-496C-950C-264E2B2EC5AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74FEB820-AA33-496C-950C-264E2B2EC5AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74FEB820-AA33-496C-950C-264E2B2EC5AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAC3DE18-F9F6-4304-90A1-5BEA2A15FC4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAC3DE18-F9F6-4304-90A1-5BEA2A15FC4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAC3DE18-F9F6-4304-90A1-5BEA2A15FC4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAC3DE18-F9F6-4304-90A1-5BEA2A15FC4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A6FFADB-C607-4C77-902D-F4BBBB1477BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A6FFADB-C607-4C77-902D-F4BBBB1477BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A6FFADB-C607-4C77-902D-F4BBBB1477BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A6FFADB-C607-4C77-902D-F4BBBB1477BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34349E94-ED11-495E-AAA6-E6D2B35729A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34349E94-ED11-495E-AAA6-E6D2B35729A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34349E94-ED11-495E-AAA6-E6D2B35729A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34349E94-ED11-495E-AAA6-E6D2B35729A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3D2C72B-A395-400D-9D26-FF371E807BC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3D2C72B-A395-400D-9D26-FF371E807BC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3D2C72B-A395-400D-9D26-FF371E807BC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3D2C72B-A395-400D-9D26-FF371E807BC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2E2F1E2-5DEF-4617-96D8-43754E3633C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E2F1E2-5DEF-4617-96D8-43754E3633C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2E2F1E2-5DEF-4617-96D8-43754E3633C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2E2F1E2-5DEF-4617-96D8-43754E3633C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F1E4E825-CF96-4663-A8CB-E594EA7B34C4}
+	EndGlobalSection
+EndGlobal
